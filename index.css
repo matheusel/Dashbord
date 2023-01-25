@@ -1,0 +1,200 @@
+@font-face{
+  src: url(./fonts/got.ttf);
+  font-family: got;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar{
+  width: 0.4rem;  
+}
+::-webkit-scrollbar-thumb{
+  background-color: #FBD674;;
+  border-radius: 0.4rem;  
+}
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+#imgmenu{
+  background-image: url("./img/git_capa.gif.crdownload");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  font-family: got;
+  font-size: 0.9rem;
+  height: 7rem;
+  gap: 19rem;
+ 
+}
+
+#logo{
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  right: -5rem;
+  top: -1.3rem;
+  float: left;
+ 
+}
+
+.menu li {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+
+}
+.menu ul{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#topo{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:flex-start;
+  margin-top: 2.5rem;
+}
+
+.menu a{
+  color: #FBD674;
+  text-decoration: none;
+}
+
+.perguntascontainer{
+  padding: 5rem;
+  background-color: black;
+  height: 100vh;
+}
+
+.perguntastitulo{
+  color: #FBD674;
+  font-size: 1.5rem;
+  font-family: got;
+  margin-top: 8rem;
+}
+
+.img_pergunta{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.pergunta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #F9EFDB;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.pergunta h3{
+  color: #FBD674;
+  font-size: 1.5rem;
+  
+}
+
+.pergunta i{
+  color: black;
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
+
+.resposta{
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  transform: scaleY(0.2);
+  transform-origin: top;
+  color:#ABA69B;
+}
+
+.ativar{
+  max-height: 300px;
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.fechar i{
+  transform: rotate(180deg);
+}
+
+#icon{
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+}
+
+/* carrossel */
+
+#imgcarrosel {
+  width: 250px;
+  height: 250px;
+}
+
+.carrossel{
+  display: block;
+  width: 30rem;
+  margin-top: -15rem;
+  margin-left:55rem;
+}
+
+.ferramentastitulo{
+  color: #FBD674;
+  font-size: 2rem;
+  font-family: got;
+  margin-top: 5rem;
+
+}
+
+.ferramentas {
+  background-color: black;
+  padding: 1rem;
+}
+
+
+.desenvolvedorestitulo{
+  color: #FBD674;
+  font-size: 2rem;
+  font-family: got;
+  margin-top: 5rem;
+
+}
+
+.desenvolvedores {
+  background-color: black;
+  padding: 1rem;
+}
+
+footer {
+  background-color: black;
+  height: 7rem;
+  padding: 8rem;
+  margin-bottom: -10rem;
+  background-image: url(./img/footer.png);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: 30rem;
+}
+
+.rodape p {
+  color: #FBD674;
+  font-size: 1rem;
+  font-family: got;
+  margin-left: 32rem;
+  margin-top: 5rem;
+}
