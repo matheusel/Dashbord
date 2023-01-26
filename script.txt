@@ -1,0 +1,31 @@
+SELECT * FROM dashboard.characters;
+SELECT * FROM dashboard.episodes;
+SELECT * FROM dashboard.houses;
+
+#1. Quais personagens tem a maior aparição no decorrer das temporadas?
+
+select `Character`, `Actor/ess`, Episodes_appeared from characters 
+order by Episodes_appeared desc limit 5;
+
+#2. Quais são os episódios com as maiores notas?
+
+select episode, season, Release_date, title, rating from episodes 
+order by rating desc limit 5;
+
+#3. Quais são os episódios com as menores notas?
+
+select episode, season, Release_date, title, rating from episodes 
+order by rating asc limit 5;
+
+#4. Quantos episódios tem em cada temporada?
+
+SELECT season, COUNT(EPISODE) from episodes
+GROUP BY Season
+ORDER BY COUNT(Episode)
+DESC LIMIT 8;
+
+#5. Quais os diretores mais presentes durante a série?
+SELECT director, COUNT(director) episode from episodes
+GROUP BY director
+ORDER BY COUNT(director)
+DESC LIMIT 5;
