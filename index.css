@@ -175,9 +175,9 @@ html{
 
 .carrossel{
   display: flex;
-  width: 25rem;
+  width: 28rem;
   margin-top: -25rem;
-  margin-left:50rem;
+  margin-left:55rem;
 }
 
 .ferramentastitulo{
@@ -304,7 +304,7 @@ html{
 }
 .img-desenvolvedores{
   display: flex;
-  gap: 4rem;
+  gap: 8rem;
   margin-top: 4rem;
 }
 .fotos{
@@ -326,6 +326,6 @@ footer {
   color: #D5D5D5;
   font-size: 1rem;
   font-family: got;
-  margin-left: 26.5rem;
+  margin-left: 32rem;
   margin-top: 5rem;
 }
